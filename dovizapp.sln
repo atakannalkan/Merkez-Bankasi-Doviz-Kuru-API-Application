@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dovizapp.webapi", "dovizapp.webapi\dovizapp.webapi.csproj", "{8DA6DB71-D889-4803-BEEF-66262D455BC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dovizapp.webui", "dovizapp.webui\dovizapp.webui.csproj", "{8F777940-B875-495E-BE3D-F6B796992FA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dovizapp.shared", "dovizapp.shared\dovizapp.shared.csproj", "{6716DA3F-9BC3-402E-8705-972F3FC58D43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dovizapp.entity", "dovizapp.entity\dovizapp.entity.csproj", "{E617DD23-768C-4867-B4EA-1A84A3A82C71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dovizapp.data", "dovizapp.data\dovizapp.data.csproj", "{102FF483-8E8C-4CD8-A62C-F665A89D2DED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dovizapp.business", "dovizapp.business\dovizapp.business.csproj", "{FF3548B2-A249-4EE7-91F4-435C531B5068}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DA6DB71-D889-4803-BEEF-66262D455BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA6DB71-D889-4803-BEEF-66262D455BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA6DB71-D889-4803-BEEF-66262D455BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA6DB71-D889-4803-BEEF-66262D455BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F777940-B875-495E-BE3D-F6B796992FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F777940-B875-495E-BE3D-F6B796992FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F777940-B875-495E-BE3D-F6B796992FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F777940-B875-495E-BE3D-F6B796992FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6716DA3F-9BC3-402E-8705-972F3FC58D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6716DA3F-9BC3-402E-8705-972F3FC58D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6716DA3F-9BC3-402E-8705-972F3FC58D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6716DA3F-9BC3-402E-8705-972F3FC58D43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E617DD23-768C-4867-B4EA-1A84A3A82C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E617DD23-768C-4867-B4EA-1A84A3A82C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E617DD23-768C-4867-B4EA-1A84A3A82C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E617DD23-768C-4867-B4EA-1A84A3A82C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{102FF483-8E8C-4CD8-A62C-F665A89D2DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102FF483-8E8C-4CD8-A62C-F665A89D2DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102FF483-8E8C-4CD8-A62C-F665A89D2DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102FF483-8E8C-4CD8-A62C-F665A89D2DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF3548B2-A249-4EE7-91F4-435C531B5068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3548B2-A249-4EE7-91F4-435C531B5068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3548B2-A249-4EE7-91F4-435C531B5068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3548B2-A249-4EE7-91F4-435C531B5068}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

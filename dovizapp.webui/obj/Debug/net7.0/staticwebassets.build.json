@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "+V5EXlOCl4O/k/eIg5nrCT9jKbm9Cj9IpiBcVbKR7hw=",
+  "Source": "dovizapp.webui",
+  "BasePath": "_content/dovizapp.webui",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "dovizapp.webui\\wwwroot",
+      "Source": "dovizapp.webui",
+      "ContentRoot": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\",
+      "BasePath": "_content/dovizapp.webui",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\img\\icon.png",
+      "SourceId": "dovizapp.webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\",
+      "BasePath": "_content/dovizapp.webui",
+      "RelativePath": "img/icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\img\\login.svg",
+      "SourceId": "dovizapp.webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\",
+      "BasePath": "_content/dovizapp.webui",
+      "RelativePath": "img/login.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\login.svg"
+    },
+    {
+      "Identity": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\img\\register.svg",
+      "SourceId": "dovizapp.webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\",
+      "BasePath": "_content/dovizapp.webui",
+      "RelativePath": "img/register.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\register.svg"
+    },
+    {
+      "Identity": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\js\\script.js",
+      "SourceId": "dovizapp.webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\",
+      "BasePath": "_content/dovizapp.webui",
+      "RelativePath": "js/script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\script.js"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../dovizapp.entity/dovizapp.entity.csproj" />
+    <ProjectReference Include="../dovizapp.data/dovizapp.data.csproj" />
+  </ItemGroup>
+
+</Project>

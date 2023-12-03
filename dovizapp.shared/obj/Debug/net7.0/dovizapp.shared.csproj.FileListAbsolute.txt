@@ -1,0 +1,14 @@
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\bin\Debug\net7.0\dovizapp.shared.deps.json
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\bin\Debug\net7.0\dovizapp.shared.runtimeconfig.json
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\bin\Debug\net7.0\dovizapp.shared.dll
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\bin\Debug\net7.0\dovizapp.shared.pdb
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\obj\Debug\net7.0\dovizapp.shared.csproj.AssemblyReference.cache
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\obj\Debug\net7.0\dovizapp.shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\obj\Debug\net7.0\dovizapp.shared.AssemblyInfoInputs.cache
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\obj\Debug\net7.0\dovizapp.shared.AssemblyInfo.cs
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\obj\Debug\net7.0\dovizapp.shared.csproj.CoreCompileInputs.cache
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\obj\Debug\net7.0\dovizapp.shared.dll
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\obj\Debug\net7.0\refint\dovizapp.shared.dll
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\obj\Debug\net7.0\dovizapp.shared.pdb
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\obj\Debug\net7.0\dovizapp.shared.genruntimeconfig.cache
+C:\Users\atoka\Desktop\dovizapp\dovizapp.shared\obj\Debug\net7.0\ref\dovizapp.shared.dll

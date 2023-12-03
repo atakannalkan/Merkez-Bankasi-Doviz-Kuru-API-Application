@@ -1,0 +1,103 @@
+@model CurrencyLisyModel
+
+<div class="container">
+    <h1 class="text-center mt-4 mb-5">Merkez Bankası Kur API !</h1>
+
+    <div class="text-center">
+        <div class="btn-group my-5">
+            <a href="/Home/CurrencyList" class="btn btn-primary"> <i class="fas fa-list"></i> Get All Currencies</a>
+
+            <form asp-controller="Home" asp-action="GetCurrencyById" class="btn-group">
+                <input type="text" class="form-control" name="id" placeholder="Kur Id:" required style="width: 177px; position: absolute; top: -38px;">
+                <button type="submit" href="/Home/GetCurrencyById" class="btn btn-secondary"> <i class="fas fa-search"></i> Get Currency By Id</button>
+            </form>
+
+            <a href="/home/currency/create" class="btn btn-success"> <i class="fas fa-plus-octagon"></i> Create</a>
+        </div>
+        </div>
+    
+
+
+    @if(ViewBag.SuccessMessage != null) { // Success Message !
+        <div class="alert alert-success d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+            </svg>
+            <strong class="me-2">İşlem Başarılı !</strong> <span>@ViewBag.SuccessMessage</span>
+        </div>
+    }
+    @if(ViewBag.Error != null) // Error Message !
+    {
+        <div class="alert alert-danger alert-dismissible fade show col-12 mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-exclamation-circle-fill text-danger me-1" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+            </svg>
+            <strong>İşlem Hatası !: </strong> <span>"@ViewBag.Error"</span>
+            <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+
+    @if(Model != null) {
+        <div class="table-responsive">
+            <table class="table table-primary table-bordered table-hover table-striped">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Id</th>
+                        <th>Currency Code</th>
+                        <th>Name</th>
+                        <th>Unit</th>
+                        <th>Forex Buying</th>
+                        <th>Forex Selling</th>
+                        <th>Banknote Buying</th>
+                        <th>Banknote Selling</th>
+                        <th style="width: 160px;">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @if (Model.Currencies != null)
+                    {
+                        @foreach (var currency in Model.Currencies)
+                        {
+                            <tr>
+                                <td>@currency.CurrencyId</td>
+                                <td>@currency.CurrencyCode</td>
+                                <td>@currency.Name</td>
+                                <td>@currency.Unit</td>
+                                <td>@currency.ForexBuying</td>
+                                <td>@currency.ForexSelling</td>
+                                <td>@currency.BanknoteBuying</td>
+                                <td>@currency.BanknoteSelling</td>
+                                <td>
+                                    <a href="/home/currency/edit/@currency.CurrencyId" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i> Edit</a>
+                                    <button data-target="/Home/CurrencyDelete/@currency.CurrencyId" class="btn btn-danger btn-sm currencyDeleteModalBtn" data-bs-target="#currencyHardDeleteModel" data-bs-toggle="modal"> <i class="far fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                        }
+                    } else if(Model.Currency != null) {
+                        <tr>
+                            <td>@Model.Currency.CurrencyId</td>
+                            <td>@Model.Currency.CurrencyCode</td>
+                            <td>@Model.Currency.Name</td>
+                            <td>@Model.Currency.Unit</td>
+                            <td>@Model.Currency.ForexBuying</td>
+                            <td>@Model.Currency.ForexSelling</td>
+                            <td>@Model.Currency.BanknoteBuying</td>
+                            <td>@Model.Currency.BanknoteSelling</td>
+                            <td>
+                                <a href="/home/currency/edit/@Model.Currency.CurrencyId" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i> Edit</a>
+                                <button data-target="/Home/CurrencyDelete/@Model.Currency.CurrencyId" class="btn btn-danger btn-sm currencyDeleteModalBtn" data-bs-target="#currencyHardDeleteModel" data-bs-toggle="modal"> <i class="far fa-trash-alt"></i> Delete</button>
+                            </td>
+                        </tr>
+                    }
+                    
+                </tbody>
+            </table>
+        </div> 
+    }
+</div>
+
+
+<script data-src="https://cdn.jsdelivr.net/npm/&#64;popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>

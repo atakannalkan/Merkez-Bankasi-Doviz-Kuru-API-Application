@@ -1,0 +1,63 @@
+@model CurrencyModel
+
+<h2 class="mb-4 mt-5">Döviz Güncelle</h2>
+<hr>
+
+<div class="row mt-3">
+    <form asp-controller="Home" asp-action="CurrencyEdit">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        
+        <input type="hidden" asp-for="CurrencyId">
+
+        <div class="row d-flex align-items-end mb-3 mb-sm-4">
+            <label asp-for="CurrencyCode" class="col-form-label col-sm-2">Currency Code</label>
+            <div class="col-sm-10">
+                <input type="text" asp-for="CurrencyCode" class="form-control">
+            </div>
+        </div>
+        <div class="row d-flex align-items-end mb-3 mb-sm-4">
+            <label asp-for="Name" class="col-form-label col-sm-2">Name</label>
+            <div class="col-sm-10">
+                <input type="text" asp-for="Name" class="form-control">
+            </div>
+        </div>
+        <div class="row d-flex align-items-end mb-3 mb-sm-4">
+            <label asp-for="Unit" class="col-form-label col-sm-2">Unit</label>
+            <div class="col-sm-10">
+                <input type="number" asp-for="Unit" class="form-control">
+            </div>
+        </div>
+        <div class="row d-flex align-items-end mb-3 mb-sm-4">
+            <label asp-for="ForexBuying" class="col-form-label col-sm-2">Forex Buying</label>
+            <div class="col-sm-10">
+                <input type="number" asp-for="ForexBuying" class="form-control" step="0.00001">
+            </div>
+        </div>
+        <div class="row d-flex align-items-end mb-3 mb-sm-4">
+            <label asp-for="ForexSelling" class="col-form-label col-sm-2">Forex Selling</label>
+            <div class="col-sm-10">
+                <input type="number" asp-for="ForexSelling" class="form-control" step="0.00001">
+            </div>
+        </div>
+        <div class="row d-flex align-items-end mb-3 mb-sm-4">
+            <label asp-for="BanknoteBuying" class="col-form-label col-sm-2">Banknote Buying</label>
+            <div class="col-sm-10">
+                <input type="number" asp-for="BanknoteBuying" class="form-control" step="0.00001">
+            </div>
+        </div>
+        <div class="row d-flex align-items-end mb-5 mb-sm-4">
+            <label asp-for="BanknoteSelling" class="col-form-label col-sm-2">Banknote Selling</label>
+            <div class="col-sm-10">
+                <input type="number" asp-for="BanknoteSelling" class="form-control" step="0.00001">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-10 offset-sm-2 mt-3">
+                <a href="/" class="btn btn-secondary me-1"><i class="fas fa-arrow-circle-left"></i> Geri</a>
+                <button type="submit" class="btn btn-primary"><i class="far fa-pen-nib"></i> Döviz Güncelle</button>
+            </div>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,55 @@
+@model LoginModel
+
+<h2 class="mb-4 mt-5">Giriş Yap</h2>
+<hr>    
+
+<div class="row mt-4">
+    <div class="col-10 col-md-8 col-lg-5 order-1 order-lg-2 mb-3">
+        <img src="/img/login.svg" class="w-100" alt="">
+    </div>
+
+    <div class="col-12 col-lg-7 order-2 order-lg-1">
+
+        @if(TempData["SuccessMessage"] != null) { // Success Message !
+            <div class="alert alert-success d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                <strong class="me-2">İşlem Başarılı !</strong> <span>@TempData["SuccessMessage"]</span>
+            </div>
+        }
+
+        <form asp-controller="Account" asp-action="Login">     
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="row d-flex align-items-end mb-3 mb-sm-4">
+                <label asp-for="UserName" class="col-form-label col-sm-2">Kullanıcı Adı</label>
+                <div class="col-sm-10">
+                    <input type="text" asp-for="UserName" class="form-control">
+                </div>
+            </div>
+            <div class="row d-flex align-items-end mb-2 mb-sm-4">
+                <label asp-for="Password" class="col-form-label col-sm-2">Şifre</label>
+                <div class="col-sm-10">
+                    <input type="password" asp-for="Password" class="form-control">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 offset-sm-2">
+                <div class="form-check me-0">
+                    <label asp-for="RememberMe" class="form-check-label">Beni Hatırla</label>
+                    <input type="checkbox" class="form-check-input" asp-for="RememberMe">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 offset-sm-2 mt-5">
+                    <button type="submit" class="btn btn-primary me-2"><i class="fas fa-sign-in-alt"></i> Giriş Yap</button>
+                    <div class="loginFooter d-inline">
+                        <i class="fas fa-grip-lines-vertical"></i>
+                        <span class="ms-2">Üye değil misiniz ? <a href="/account/register" class="btn btn-link px-1"><i class="far fa-user-plus"></i> Kayıt Ol</a></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\atoka\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\atoka\\.nuget\\packages"
+    ]
+  }
+}

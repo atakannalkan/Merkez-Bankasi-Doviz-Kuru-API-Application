@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\img\\icon.png",
+      "PackagePath": "staticwebassets\\img\\icon.png"
+    },
+    {
+      "Id": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\img\\login.svg",
+      "PackagePath": "staticwebassets\\img\\login.svg"
+    },
+    {
+      "Id": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\img\\register.svg",
+      "PackagePath": "staticwebassets\\img\\register.svg"
+    },
+    {
+      "Id": "C:\\Users\\atoka\\Desktop\\dovizapp\\dovizapp.webui\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "obj\\Debug\\staticwebassets\\msbuild.build.dovizapp.webui.props",
+      "PackagePath": "build\\dovizapp.webui.props"
+    },
+    {
+      "Id": "obj\\Debug\\staticwebassets\\msbuild.buildMultiTargeting.dovizapp.webui.props",
+      "PackagePath": "buildMultiTargeting\\dovizapp.webui.props"
+    },
+    {
+      "Id": "obj\\Debug\\staticwebassets\\msbuild.buildTransitive.dovizapp.webui.props",
+      "PackagePath": "buildTransitive\\dovizapp.webui.props"
+    },
+    {
+      "Id": "obj\\Debug\\staticwebassets\\msbuild.dovizapp.webui.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

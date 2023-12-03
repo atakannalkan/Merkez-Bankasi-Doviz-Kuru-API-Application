@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "La/QggEnCL/cMechGjQOfBhjsQN07Mp2lyHz3TR02rA=",
+  "Source": "dovizapp.webapi",
+  "BasePath": "_content/dovizapp.webapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

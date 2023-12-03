@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Web Api with JavaScript</title>
+</head>
+<body>
+
+    <div class="container">        
+
+        <h1 class="text-center mt-4 mb-5">Güncel Kur Bilgileri !</h1>
+        <button class="btn btn-primary d-block ms-auto me-auto mb-4" id="apiButton">Get Currency API</button>
+
+
+        <div class="alert alert-danger alert-dismissible fade show col-12 mb-5" id="errorMessage">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-exclamation-circle-fill text-danger me-1" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+            </svg>
+            <strong>İşlem Hatası !: </strong> <span></span>
+            <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+
+        <div class="table-responsive" id="tableContainer">
+            <table class="table table-primary table-bordered table-hover table-striped">
+
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Id</th>
+                        <th>Currency Code</th>
+                        <th>Name</th>
+                        <th>Unit</th>
+                        <th>Forex Buying</th>
+                        <th>Forex Selling</th>
+                        <th>Banknote Buying</th>
+                        <th>Banknote Selling</th>
+                    </tr>
+                </thead>
+
+                <tbody id="currencies">
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    
+
+
+    <script data-src="https://cdn.jsdelivr.net/npm/&#64;popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

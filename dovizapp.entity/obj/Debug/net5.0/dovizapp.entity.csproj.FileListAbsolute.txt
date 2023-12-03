@@ -1,0 +1,15 @@
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\bin\Debug\net5.0\dovizapp.entity.deps.json
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\bin\Debug\net5.0\dovizapp.entity.dll
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\bin\Debug\net5.0\dovizapp.entity.pdb
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\obj\Debug\net5.0\dovizapp.entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\obj\Debug\net5.0\dovizapp.entity.AssemblyInfoInputs.cache
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\obj\Debug\net5.0\dovizapp.entity.AssemblyInfo.cs
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\obj\Debug\net5.0\dovizapp.entity.csproj.CoreCompileInputs.cache
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\obj\Debug\net5.0\dovizapp.entity.dll
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\obj\Debug\net5.0\ref\dovizapp.entity.dll
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\obj\Debug\net5.0\dovizapp.entity.pdb
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\obj\Debug\net5.0\dovizapp.entity.csproj.AssemblyReference.cache
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\obj\Debug\net5.0\refint\dovizapp.entity.dll
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\bin\Debug\net5.0\dovizapp.shared.dll
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\bin\Debug\net5.0\dovizapp.shared.pdb
+C:\Users\atoka\Desktop\dovizapp\dovizapp.entity\obj\Debug\net5.0\dovizapp.entity.csproj.CopyComplete

@@ -1,0 +1,42 @@
+@model bool;
+
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+        <a href="/" class="navbar-brand" style="font-weight: 600;"> <i class="far fa-shopping-cart"></i> Döviz Uygulaması</a>
+
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item ps-1 ps-sm-0">
+                    <a href="/" class="nav-link active">Tüm Dövizler</a>
+                </li>              
+            </ul>
+
+            @if (Model == true)
+            {
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <div class="dropdown userDropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle ps-1 ps-sm-2" data-bs-toggle="dropdown" aria-expanded="true"><i class="fas fa-user-alt"></i> Hesabım</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Account/Logout" class="dropdown-item bg-danger text-white"><i class="far fa-sign-out-alt"></i> Çıkış Yap</a></li>
+                            </ul>                            
+                        </div>
+                    </li>
+                </ul>
+            } else {
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ps-1 ps-sm-0">
+                        <a href="/account/login" class="nav-link active"><i class="far fa-sign-in-alt"></i> Giriş Yap</a>
+                    </li>
+                    <li class="nav-item ps-1 ps-sm-0">
+                        <a href="/account/register" class="nav-link active"><i class="far fa-user-plus"></i> Kayıt Ol</a>
+                    </li>
+                </ul>
+            }            
+        </div>
+    </div>
+</nav>
